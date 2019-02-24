@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Kuckoos SMS", "Kuckoos SMS\Kuckoos SMS.vbproj", "{7F49BEFB-BE78-4C76-A1B0-DDFFF2C9BA65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F49BEFB-BE78-4C76-A1B0-DDFFF2C9BA65}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{7F49BEFB-BE78-4C76-A1B0-DDFFF2C9BA65}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{7F49BEFB-BE78-4C76-A1B0-DDFFF2C9BA65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F49BEFB-BE78-4C76-A1B0-DDFFF2C9BA65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F49BEFB-BE78-4C76-A1B0-DDFFF2C9BA65}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F49BEFB-BE78-4C76-A1B0-DDFFF2C9BA65}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{7F49BEFB-BE78-4C76-A1B0-DDFFF2C9BA65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F49BEFB-BE78-4C76-A1B0-DDFFF2C9BA65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F49BEFB-BE78-4C76-A1B0-DDFFF2C9BA65}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{7F49BEFB-BE78-4C76-A1B0-DDFFF2C9BA65}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,707 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F49BEFB-BE78-4C76-A1B0-DDFFF2C9BA65}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Kuckoos_SMS.My.MyApplication</StartupObject>
+    <RootNamespace>Kuckoos_SMS</RootNamespace>
+    <AssemblyName>Kuckoos SMS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>http://www.codingvisions.com/</SupportUrl>
+    <ProductName>Kuckoos School Management Software</ProductName>
+    <PublisherName>Coding Visions Infotech Pvt. Ltd.</PublisherName>
+    <SuiteName>Kuckoos School Management Software</SuiteName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Kuckoos SMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Kuckoos SMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Kuckoos.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3117E72D17CA4160C1B61B5F7C152F879E9659F0</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Kuckoos SMS_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CrystalDecisions" />
+    <Import Include="CrystalDecisions.CrystalReports" />
+    <Import Include="CrystalDecisions.CrystalReports.EMFServerMessageFactory" />
+    <Import Include="CrystalDecisions.CrystalReports.Engine" />
+    <Import Include="CrystalDecisions.CrystalReports.Engine.Migration" />
+    <Import Include="CrystalDecisions.CrystalReports.EPFPageObjectFactory" />
+    <Import Include="CrystalDecisions.CrystalReports.ETFTotallerTreeFactory" />
+    <Import Include="CrystalDecisions.CrystalReports.SCREventLog" />
+    <Import Include="CrystalDecisions.CrystalReports.TSLV" />
+    <Import Include="CrystalDecisions.CrystalReports.ViewerObjectModel" />
+    <Import Include="CrystalDecisions.ReportAppServer" />
+    <Import Include="CrystalDecisions.ReportSource" />
+    <Import Include="CrystalDecisions.Shared" />
+    <Import Include="CrystalDecisions.Shared.Interop" />
+    <Import Include="CrystalDecisions.Shared.Json" />
+    <Import Include="CrystalDecisions.Web" />
+    <Import Include="CrystalDecisions.Web.HtmlReportRender" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.Designer.vb">
+      <DependentUpon>Account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Account.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Add Class.Designer.vb">
+      <DependentUpon>Add Class.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add Class.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Exam Marks.Designer.vb">
+      <DependentUpon>Add Exam Marks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add Exam Marks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Exam.Designer.vb">
+      <DependentUpon>Add Exam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add Exam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Staff.Designer.vb">
+      <DependentUpon>Add Staff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add Staff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Subject.Designer.vb">
+      <DependentUpon>Add Subject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add Subject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Transaction.Designer.vb">
+      <DependentUpon>Add Transaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add Transaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add User.Designer.vb">
+      <DependentUpon>Add User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="All Exam Details.Designer.vb">
+      <DependentUpon>All Exam Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="All Exam Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="All Payment Details.Designer.vb">
+      <DependentUpon>All Payment Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="All Payment Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="All Transaction Details.Designer.vb">
+      <DependentUpon>All Transaction Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="All Transaction Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllExamDetails.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllExamDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AllPaymentReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllPaymentReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AllTransactionDetail.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllTransactionDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class Details.Designer.vb">
+      <DependentUpon>Class Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassDetail.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClassDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Delete User.Designer.vb">
+      <DependentUpon>Delete User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Delete User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Details User.Designer.vb">
+      <DependentUpon>Details User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Details User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam Detail.Designer.vb">
+      <DependentUpon>Exam Detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Exam Detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExamDetail.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExamDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fees Add.Designer.vb">
+      <DependentUpon>Fees Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fees Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fees Collect.Designer.vb">
+      <DependentUpon>Fees Collect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fees Collect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fees Collection Details.Designer.vb">
+      <DependentUpon>Fees Collection Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fees Collection Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fees Details.Designer.vb">
+      <DependentUpon>Fees Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fees Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeesCollectionDetail.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FeesCollectionDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FeesCollectionSlip.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FeesCollectionSlip.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FeesDetails.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FeesDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KuckoosDBDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KuckoosDBDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="KuckoosDBDataSet.vb">
+      <DependentUpon>KuckoosDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.Designer.vb">
+      <DependentUpon>Loading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="PrintForm.Designer.vb">
+      <DependentUpon>PrintForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrintForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaaffDetailNon.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaaffDetailNon.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Staff Details.Designer.vb">
+      <DependentUpon>Staff Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff Payment Detail.Designer.vb">
+      <DependentUpon>Staff Payment Detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Payment Detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff Payment.Designer.vb">
+      <DependentUpon>Staff Payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffDetails.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StaffPaymentReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffPaymentReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Stud Details.Designer.vb">
+      <DependentUpon>Stud Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stud Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stud Register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stud Register.Designer.vb">
+      <DependentUpon>Stud Register.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Stud Update.Designer.vb">
+      <DependentUpon>Stud Update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stud Update.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Mark Detail.Designer.vb">
+      <DependentUpon>Student Mark Detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student Mark Detail.vb" />
+    <Compile Include="StudentDetail.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StudentMarkDetail.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentMarkDetail.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Subject Details.Designer.vb">
+      <DependentUpon>Subject Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Subject Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectDetail.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SubjectDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Transaction Detail.Designer.vb">
+      <DependentUpon>Transaction Detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction Detail.vb" />
+    <Compile Include="TransactionDetail.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransactionDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Update User.Designer.vb">
+      <DependentUpon>Update User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Update User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Account.resx">
+      <DependentUpon>Account.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AccountReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Class.resx">
+      <DependentUpon>Add Class.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Exam Marks.resx">
+      <DependentUpon>Add Exam Marks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Exam.resx">
+      <DependentUpon>Add Exam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Staff.resx">
+      <DependentUpon>Add Staff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Subject.resx">
+      <DependentUpon>Add Subject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Transaction.resx">
+      <DependentUpon>Add Transaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add User.resx">
+      <DependentUpon>Add User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All Exam Details.resx">
+      <DependentUpon>All Exam Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All Payment Details.resx">
+      <DependentUpon>All Payment Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All Transaction Details.resx">
+      <DependentUpon>All Transaction Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllExamDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AllExamDetails.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllPaymentReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AllPaymentReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllTransactionDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AllTransactionDetail.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class Details.resx">
+      <DependentUpon>Class Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClassDetail.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete User.resx">
+      <DependentUpon>Delete User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details User.resx">
+      <DependentUpon>Details User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam Detail.resx">
+      <DependentUpon>Exam Detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ExamDetail.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fees Add.resx">
+      <DependentUpon>Fees Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fees Collect.resx">
+      <DependentUpon>Fees Collect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fees Collection Details.resx">
+      <DependentUpon>Fees Collection Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fees Details.resx">
+      <DependentUpon>Fees Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeesCollectionDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FeesCollectionDetail.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeesCollectionSlip.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FeesCollectionSlip.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeesDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FeesDetails.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintForm.resx">
+      <DependentUpon>PrintForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaaffDetailNon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StaaffDetailNon.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Details.resx">
+      <DependentUpon>Staff Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Payment Detail.resx">
+      <DependentUpon>Staff Payment Detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Payment.resx">
+      <DependentUpon>Staff Payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StaffDetails.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffPaymentReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StaffPaymentReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stud Details.resx">
+      <DependentUpon>Stud Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stud Register.resx">
+      <DependentUpon>Stud Register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stud Update.resx">
+      <DependentUpon>Stud Update.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Mark Detail.resx">
+      <DependentUpon>Student Mark Detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StudentDetail.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMarkDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StudentMarkDetail.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subject Details.resx">
+      <DependentUpon>Subject Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SubjectDetail.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction Detail.resx">
+      <DependentUpon>Transaction Detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TransactionDetail.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update User.resx">
+      <DependentUpon>Update User.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Kuckoos SMS_TemporaryKey.pfx" />
+    <None Include="KuckoosDBDataSet.xsc">
+      <DependentUpon>KuckoosDBDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="KuckoosDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KuckoosDBDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="KuckoosDBDataSet.xss">
+      <DependentUpon>KuckoosDBDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SAP.CrystalReports14.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>SAP Crystal Reports Runtime Engine for .NET Framework</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.png" />
+    <None Include="Resources\Kuckoos.ico" />
+    <None Include="Resources\Kuckoos icon.png" />
+    <None Include="img\graduated.png" />
+    <None Include="img\LoginRed.jpg" />
+    <None Include="img\Kuckoos.png" />
+    <Content Include="KuckoosDB.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,77 @@
+School Management System
+
+Prerequisites :-
+
+.NET Framework 4.5
+SAP Crystal Report Runtime 2015.
+Microsoft Office 2013
+AccessDatabaseEngine
+
+Description :- 
+
+This School Management System build using VB.Net in Visual Studio 2012.
+This system contains Student management, Staff management, Exam management, User management, 
+Class management, Subject management, Fees management, Accounts and Payment.
+
+Key Features :-
+1. Student :
+	Add Student
+	Student Details
+	Update Student Details
+	Print Student Details
+
+2. Class :
+	Add Class
+	Class Details
+	Print Class Details
+
+3. Staff :
+	Add Staff Member
+	Staff Details
+	Print Staff Details
+
+4. Exam :
+	Add Exam
+	Add Exam Marks
+	Exam Details
+	All Exam Details
+	Student Wise Exam Details
+	Print Exam Details, All Exam Details, Student Wise Details
+
+5. Fees :
+	Add Fees
+	Fees Details
+	Collect Fees
+	Fees Collection Details
+	Print Fees Details, Fees Collection Receipt
+
+6. Subject :
+	Add Subject
+	Subject Details
+	Print Subject Details
+
+7. Account :
+	New Transaction
+	Transaction Details
+	All Transaction Details
+	Account Summery
+	Print Account Summery, Transaction Details, All Transaction Details
+
+8. User:
+	Add User
+	User Details
+	Update User Details
+	Delete User
+
+9. Payment :
+	Add Payment
+	Payment Details
+	All Payments Details
+	Print Payment Details, All Payments Details
+
+
+Can be customize for Student attendance using this software or by using android app.
+
+Software develop by : Coding Visions Infotech Pvt. Ltd.
+Contact : 	Contact@codingvisions.com
+			Sagar@codingvisions.com
